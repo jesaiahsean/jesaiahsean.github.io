@@ -17,11 +17,11 @@
     
     
     <entry>
-      <title>代码演示</title>
+      <title>一招解决“请在微信客户端中打开链接”</title>
       <link href="/2022/09/14/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/%E6%BC%94%E7%A4%BA/"/>
       <url>/2022/09/14/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/%E6%BC%94%E7%A4%BA/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">a</span> () &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(hello world)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在浏览器访问网站，却提示“请在微信客户端打开链接”。虽然这个情况你可能从未遇到过，但对于爱折腾的小伙伴，确是一道拦路虎其实解决办法很简单，就是新建一个UA：按F12打开浏览器的控制台，切换到手机模式（点亮下图所指蓝色图标）。选择“Edit…”后点击“Add custom device…”。输入以下代码：Mozilla/5.0 (Linux; Android 5.0; SM-N9100 Build/LRX21V) &gt; AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 &gt; Chrome/37.0.0.0 Mobile Safari/537.36 &gt; MicroMessenger/6.0.2.56\_r958800.520 NetType/WIFI</span><br><span class="line">保存后将需要绕过限制的链接使用此 UA 访问即可。</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
